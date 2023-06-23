@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <span><img src="/assets/images/logo.png" height=60 width=70></span>
+  <a mat-button routerLink="/home" routerLinkActive="active"> Home</a>
+  <a mat-button routerLink="/aboutus" routerLinkActive="active"> About</a>
+  <a mat-button routerLink="/menu" routerLinkActive="active"> Menu</a>
+  <a mat-button routerLink="/cart" routerLinkActive="active"> Cart</a>
+</mat-toolbar>
+<div *ngIf="headerVisible">
+
+  <div class="container jumbotron bg-image" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
+    fxLayoutAlign.xs="start center" fxLayoutAlign.sm="start center" fxLayoutAlign.gt-sm="center center"
+    fxLayoutGap="10px">
+
+    <div fxFlex fxFlex.gt-sm="100%" style="text-align: center; font-weight: bold;">
+      <h1 style="font-family: 'Machineat', cursive;">Ristorante Je Gambero Rosso</h1>
+      <p>Delivering great food for more than 18 years!</p>
+      <button mat-raised-button color="primary" style="background: green;" routerLink="/menu">Our Menu</button>
+      <button mat-raised-button color="primary" style="background: green;">Book a Table</button>
+    </div>
+    <div fxFlex></div>
+  </div>
+
+</div>

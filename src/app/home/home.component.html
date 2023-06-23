@@ -1,0 +1,103 @@
+<h1 style="text-align: center; font-family: 'Machineat', cursive;">Ristorante Je Gambero Rosso</h1>
+<div class="container jumbotron" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
+  fxLayoutAlign.xs="start center" fxLayoutAlign.sm="start center" fxLayoutAlign.gt-sm="center center"
+  fxLayoutGap="10px">
+
+  <div fxFlex fxFlex.gt-sm="40%" style="text-align: center;">
+    <span><img src="/assets/images/food-table.jpg" style="    height: 100%;
+    width: 40%;"></span>
+
+  </div>
+  <div fxFlex fxFlex.gt-sm="40%">
+    <h1>Eum ipsam laborum deleniti <span style="font-weight: bold;">velit pariatur architecto aut nihil</span></h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.</p>
+    <ul>
+      <li>Lorem Ipsum is simply dummy text</li>
+      <li>Lorem Ipsum passages, and more recently with desktop publishing</li>
+      <li>It has survived not only five centuries, but also the leap into electronic typesetting</li>
+    </ul>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book.</p>
+  </div>
+  <div fxFlex fxFlex.gt-sm="20%"></div>
+</div>
+<div class=" bg-gray">
+
+  <h1 style="text-align: center;  font-family: 'Machineat', cursive;">Why choose us</h1>
+  <p style="text-align: center; font-weight: bold;">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+    adipisci expadita at voluptas atque vitae autem.</p>
+  <div class="container jumbotron" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
+    fxLayoutAlign.xs="start center" fxLayoutAlign.sm="start center" fxLayoutAlign.gt-sm="center center"
+    fxLayoutGap="10px" style="    padding: 70px; font-weight: bold;
+  ">
+
+
+    <div fxFlex fxFlex.gt-sm="33%">
+      <span>
+        <p>01</p>
+        <p>Lorem Ipsum</p>
+        <p> It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged</p>
+
+      </span>
+
+    </div>
+    <div fxFlex fxFlex.gt-sm="33%">
+      <p>02</p>
+      <p>Lorem Ipsum</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+    </div>
+    <div fxFlex fxFlex.gt-sm="33%">
+      <p>03</p>
+      <p>Lorem Ipsum</p>
+      <p>Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s</p>
+
+    </div>
+  </div>
+</div>
+<h1 style="text-align: center;  font-family: 'Machineat', cursive;">Check our specials</h1>
+<h4 style="text-align: center;">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adippisci expedita at voluptas atque vitae autem.</h4>
+
+<div class="container jumbotron" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
+  fxLayoutAlign.xs="start center" fxLayoutAlign.sm="start center" fxLayoutAlign.gt-sm="center center"
+  fxLayoutGap="10px">
+
+  <div fxFlex fxFlex.gt-sm="30%" style="text-align: center;">
+    <div class="row">
+      <button mat-raised-button color="primary" (click)="selectedText(1)"
+        style="background: transparent; color: blue; min-width: 30%;">Modi sit est</button>
+    </div>
+    <div class="row" style="margin-top: 2%;">
+      <button mat-raised-button color="primary" (click)="selectedText(2)"
+        style="background: transparent; color: blue; min-width: 30%;">Unde praesentium sed</button>
+    </div>
+    <div class="row" style="margin-top: 2%;">
+      <button mat-raised-button color="primary" (click)="selectedText(3)"
+        style="background: transparent; color: blue; min-width: 30%;">Pariatur explicabo vel</button>
+    </div>
+    <div class="row" style="margin-top: 2%;">
+      <button mat-raised-button color="primary" (click)="selectedText(4)"
+        style="background: transparent; color: blue; min-width: 30%;">Nostrum qui quasi</button>
+    </div>
+    <div class="row" style="margin-top: 2%;">
+      <button mat-raised-button color="primary" (click)="selectedText(5)"
+        style="background: transparent; color: blue; min-width: 30%;">Iusto ut expedita aut</button>
+    </div>
+  </div>
+  <div fxFlex fxFlex.gt-sm="40%">
+   
+    <span [innerHTML]="textMessage" style="font-weight: bold;"></span>
+  </div>
+  <div fxFlex fxFlex.gt-sm="30%" style="text-align: center;">
+    <span><img src="/assets/images/foodImage.jpg" style="height: 100%;
+      width: 35%;"></span>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<h2 style="text-align: center;">Detail</h2>
+<hr>
+<div class="container" style="justify-content: center;">
+  <mat-card class="example-card mr-5"
+    style="background-color: white;  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);">
+    <mat-card-header style="min-width: 400px;justify-content: center;">
+      <img mat-card-image width="300px" height="300px"
+        style="max-width: 300px; min-width: 300px; max-height: 300px; min-height: 300px;" [src]="product.image"
+        [alt]="product.name">
+    </mat-card-header>
+    <hr>
+    <mat-card-content class="prod-price">
+      <mat-card-title style="min-height: 100px;">{{product.name}}</mat-card-title>
+      <mat-card-subtitle>{{product.description}}</mat-card-subtitle>
+      <mat-card-subtitle>Contents: {{product.contents}}</mat-card-subtitle>
+      <hr>
+      <p>
+        {{product.price | currency:'EUR':'symbol-narrow':'1.2-2'}}
+      </p>
+      <hr>
+    </mat-card-content>
+    <mat-card-actions style="text-align: center;">
+      <p *ngIf="!product.availability" style="color: red;">
+        This product is not available.
+      </p>
+      <button *ngIf="product.availability" mat-raised-button color="warn" (click)="addBasket(product.id)"><i
+          class="material-icons">add_shopping_cart</i> Order</button>
+    </mat-card-actions>
+  
+  </mat-card>
+</div>

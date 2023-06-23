@@ -1,0 +1,27 @@
+<h2 class="text-center">Our Specialties</h2>
+<hr>
+<div class="container" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <div fxFlex="100%" fxFlex.gt-sm="50%" fxFlex.gt-md="33.33%" fxFlex.gt-lg="25%" *ngFor="let product of products">
+    <mat-card class="example-card"
+      style="background-color: white; box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);">
+      <mat-card-header>
+        <img mat-card-image [src]="product.image" [alt]="product.name">
+      </mat-card-header>
+      <hr>
+      <mat-card-content class="prod-price">
+        <mat-card-title>{{product.name}}</mat-card-title>
+        <mat-card-subtitle>{{product.description}}</mat-card-subtitle>
+        <hr>
+        <p>
+          {{product.price | currency:'EUR':'symbol-narrow':'1.2-2'}}
+        </p>
+        <hr>
+      </mat-card-content>
+      <mat-card-actions class="text-center">
+        <p *ngIf="!product.availability" style="color: red;">This product is not available.</p>
+        <button *ngIf="product.availability" mat-raised-button color="primary" (click)="gotoDetail(product.id)">Details</button>
+        <button *ngIf="product.availability" mat-raised-button color="warn" (click)="addBasket(product.id)"><i class="material-icons">add_shopping_cart</i> Order</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

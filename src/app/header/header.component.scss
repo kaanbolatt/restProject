@@ -1,0 +1,29 @@
+$lt-gray: #ddd;
+$background-dark: #512DA8;
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+
+$background-moredark: floralwhite;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+  margin: 0px auto;
+  padding: $pad-up-down $pad-left-right;
+}
+
+.jumbotron {
+  @include zero-margin(70px,30px);
+  background: $background-light ;
+  color:floralwhite;
+  min-height: 150px;
+}
+
+.active {
+  background: $background-moredark;
+}
+.bg-image{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/food.jpg');
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
